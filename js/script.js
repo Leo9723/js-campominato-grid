@@ -19,7 +19,6 @@ button.addEventListener('click', function(){
 
     let element = document.getElementById("form");
     element.classList.add("none");
-    console.log(number)
     
     if(number == 100) {
         for(let i = 0; i<number; i++){
@@ -27,9 +26,12 @@ button.addEventListener('click', function(){
             const cella = cellTab(i+1)
             cella.classList.add('c-100')
             container.appendChild(cella);
-
             
-            console.log(element)
+            cella.addEventListener('click', function(){
+                cella.classList.add('red-box')
+                console.log(this.innerText)
+            }) 
+            
             
         
         }
@@ -39,6 +41,14 @@ button.addEventListener('click', function(){
             const cella = cellTab(i+1)
             cella.classList.add('c-81')
             container.appendChild(cella);
+
+            cella.addEventListener('click', function(){
+                cella.classList.add('red-box')
+                console.log(this.innerText)
+            }) 
+
+
+
         }
     }
     else {
@@ -46,6 +56,14 @@ button.addEventListener('click', function(){
             const cella = cellTab(i+1)
             cella.classList.add('c-49')
             container.appendChild(cella);
+
+            cella.addEventListener('click', function(){
+                cella.classList.add('red-box')
+                console.log(this.innerText)
+            }) 
+
+
+            
         }
     }
     
