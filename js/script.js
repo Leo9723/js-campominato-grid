@@ -14,11 +14,13 @@ function cellTab(numero) {
 
 
 button.addEventListener('click', function(){
+
+    document.querySelector('.container').innerHTML = ''
     
     let number = parseInt(document.getElementById('number').value);
 
     let element = document.getElementById("form");
-    element.classList.add("none");
+  
     
     if(number == 100) {
         for(let i = 0; i<number; i++){
@@ -70,7 +72,6 @@ button.addEventListener('click', function(){
     if(number == 100) {
         element.classList.add('c-100')
     }
-
 })
 
 /* element.addEventListener('click', function(){

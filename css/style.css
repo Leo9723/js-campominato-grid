@@ -103,3 +103,6 @@ span {
     padding-left: 50px;
 }
 
+.active {
+    display: block;
+}
